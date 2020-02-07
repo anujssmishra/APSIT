@@ -1,0 +1,6 @@
+sudo apt update
+sudo apt upgrade
+sudo apt install default-jre-headless:i386
+sudo apt-get install default-jre:i386
+sudo update-alternatives --config java
+java -jar coaSimulatorNew.jar
