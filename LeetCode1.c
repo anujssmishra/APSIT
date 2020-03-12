@@ -2,10 +2,11 @@
 #include<stdio.h>
 
 int* twoSum(int* nums, int numsSize, int target, int* returnSize){
-
-    int *result = malloc(2*sizeof(int));
-    for(int i=0;i<numsSize;i++) {
-        for(int j=i+1;j<numsSize;j++) {
+    // printf("%d",numsSize);
+    u_int32_t *result = malloc(2*sizeof(u_int32_t));
+    u_int16_t i, j;
+    for(i=0;i<numsSize;i++) {
+        for(j=i+1;j<numsSize;j++) {
             if(nums[i]+nums[j]==target) {
                 result[0] = i;
                 result[1] = j;
